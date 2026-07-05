@@ -1,4 +1,3 @@
-```jsx
 import { useState } from "react";
 
 import ScanForm from "./components/ScanForm";
@@ -39,19 +38,12 @@ export default function App() {
       {result && (
         <>
           <div style={styles.aiSection}>
-            <AIExplanation
-              data={result.security}
-            />
+            <AIExplanation data={result.security} />
           </div>
 
           <div style={styles.grid}>
-            <SecurityCard
-              data={result.security}
-            />
-
-            <TransactionHistory
-              tx={result.guardian}
-            />
+            <SecurityCard data={result.security} />
+            <TransactionHistory tx={result.guardian} />
           </div>
         </>
       )}
@@ -67,12 +59,10 @@ const styles = {
     minHeight: "100vh",
     color: "white",
   },
-
   title: {
     marginBottom: "20px",
     fontSize: "32px",
   },
-
   loading: {
     marginTop: "20px",
     padding: "20px",
@@ -80,7 +70,6 @@ const styles = {
     borderRadius: "12px",
     border: "1px solid #1f2937",
   },
-
   empty: {
     marginTop: "20px",
     padding: "20px",
@@ -89,11 +78,9 @@ const styles = {
     color: "#9ca3af",
     border: "1px solid #1f2937",
   },
-
   aiSection: {
     marginTop: "20px",
   },
-
   grid: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
@@ -101,4 +88,3 @@ const styles = {
     marginTop: "20px",
   },
 };
-```

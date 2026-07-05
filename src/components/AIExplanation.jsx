@@ -6,12 +6,13 @@ export default function AIExplanation({ data }) {
       background: "#111827",
       padding: "20px",
       borderRadius: "12px",
+      border: "1px solid #1f2937",
       marginBottom: "20px"
     }}>
-      <h2>🤖 AI Risk Explanation</h2>
+      <h2>🤖 AI Security Explanation</h2>
 
       <p>
-        Token risk score analysis generated from on-chain + API signals.
+        This analysis is generated from GoPlus + RugCheck + on-chain heuristics.
       </p>
 
       <pre style={{ whiteSpace: "pre-wrap" }}>
